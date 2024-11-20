@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(236,236,236);
+}
+
+header {
+    color: rgb(23,23,23);
+    font-family: 'Inter', sans-serif;
+    margin-top: 25px;
+    margin-left: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    margin-right: 150px;
+}
+
+nav a {
+    color: rgb(23,23,23);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(23,23,23);
+    text-decoration-thickness: 6px;
+}
+
+.content {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.first_page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/Background3.png);
+}
+.box {
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    color: rgb(23,23,23);
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+}
+
+.right_content {
+    display: flex;
+    width: 500px;
+    height: 450px;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.right_content h1{
+    font-size: 60px;
+}
+
+.right_content p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.under {
+    border-bottom: 5px solid red;
+    padding-bottom: 0px;
+}
+
+.left {
+    display: flex;
+    width: 450px;
+    height: 100%;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.second_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/Background2.png);
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 400px;
+    justify-content: space-around;
+}
+
+.albums {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(51,51,51);
+    color: white;
+}
+
+.albums img {
+    width: 300px;
+    height: 300px;
+}
+
+.albums h1,
+.albums h2 {
+    font-size: 20px;
+    line-height: 0.5;
+    margin-left: 10px;
+}
+
+.third_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    font-family: 'Inter', sans-serif;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 100px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.nine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 700px;
+    height: 700px;
+}
+
+.nine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(236,236,236);
+}
+
+/* Кнопка смены фона */
+#colorBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#colorBtn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Остальные стили остаются без изменений */

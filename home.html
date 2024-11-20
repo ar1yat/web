@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>ariyattynyshbay</h1>
+    </div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="buttons">
+        <button id="loginPopupBtn" class="btn" onclick="toggleLoginPopup()">Login</button>
+        <button id="registerBtn" class="btn btn-outline-primary mt-2 ml-3">Register</button>
+        <button id="themeToggleBtn" class="btn">Switch Theme</button>
+    </div>
+</header>
+
+<div class="content">
+    <div class="first_page">
+        <div class="box">
+            <div class="left">
+                <div class="left_content">
+                    <h1>Nice to meet you!<br>
+                        I'm <span class="under">Ariyat Tynyshbay</span></h1>
+                    <a href="contact.html" class="contact">
+                        <p>CONTACT ME</p>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/Photo.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="second_page">
+        <div class="box2">
+            <div class="about">
+                <h1>About me</h1>
+            </div>
+            <div class="text">
+                <p>My name is Ariyat Tynyshbay, and I am a student at Astana IT University specializing in Software Engineering. I am passionate about studying frontend development, and strive to put my knowledge into practice through various projects and initiatives.<br>
+                    During my studies, I am actively engaged in website development and layout. My goal is to develop my skills and create innovative solutions that can benefit society and industry.<br>
+                    If you have any questions or suggestions, feel free to contact me!</p>
+            </div>
+            <div class="also">
+                <h2>I would also like to tell you about my hobbies <span class="under">here:</span></h2>
+            </div>
+            <a href="hobbies.html" class="contact">
+                <p>MY HOBBIES</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="loginPopup" class="auth-form">
+    <h2>Login</h2>
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button id="loginBtn">Login</button>
+    <button id="closeLoginPopup">Close</button>
+</div>
+
+<div id="registerPopup" class="auth-form">
+    <h2>Register</h2>
+    <input type="text" id="regUsername" placeholder="Username" required>
+    <input type="password" id="regPassword" placeholder="Password" required>
+    <button id="closeRegisterPopup">Close</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
